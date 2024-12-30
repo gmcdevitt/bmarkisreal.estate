@@ -1,4 +1,4 @@
-module github.com/chrede88/L1nkrTemplate
+module github.com/gmcdevitt/bmarkisreal.estate
 
 go 1.23.4
 
