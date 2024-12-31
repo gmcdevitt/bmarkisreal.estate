@@ -3,23 +3,25 @@
 ############################
 
 author:
-  name: gmcdevitt
-  image: author.png
-  greeting: "Your new L1nkr site :tada:"
-  icon: ":wave:"
+  name: Gerard McDevitt
+  image: bmark.jpg
+  greeting: "Licensed Real Estate Agent 🏠 | Mobile Notary 📝 | Notary Signing Agent ✒️ | 267-393-0300"
+  icon: ":thumbsup:"
 
 ############################
 ## Links
 ############################
 
+monochrome: true
+
 links:
-  - github: https://github.com/gmcdevitt/bmarkisreal.estate
-  - link: https://github.com/gmcdevitt/bmarkisreal.estate#readme
-  # - website:
+  - website: https://www.opuselitere.com/agents/1450495/Brendan+Markle
+  - facebook: https://www.facebook.com/bmarknotary
+  - instagram: https://www.instagram.com/bmark123456/
+  - linkedin: https://www.linkedin.com/in/brendan-markle-90ba0b45/
+  # - github:
   # - x-twitter:
   # - mastodon:
-  # - linkedin:
-  # - instagram:
   # - reddit:
   # - telegram:
   # - whatsapp:
@@ -85,7 +87,7 @@ tooltip: false
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: bmarkisreal.estate
-description: "Demo site build with L1nkr & Hugo"
+title: "Brendan Markle"
+description: "Real Estate Agent, Mobile Notary, Notary Signing Agent"
 images:
-  - thumbnail.png
+  - bmark.jpg

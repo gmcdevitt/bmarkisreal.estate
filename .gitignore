@@ -5,3 +5,11 @@ public
 
 # Apple stuff
 .DS_Store
+
+# Intellij stuff
+/.idea/.gitignore
+/.idea/bmarkisreal.estate.iml
+/go.sum
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
