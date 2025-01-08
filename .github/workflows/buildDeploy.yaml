@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - 'main'
+  schedule:
+    - cron: "0 0 1 * *"
 
   # Change the above to this if you want to build and deploy on every push, but
   # be mindful of overuse. Free accounts have a limited amount of
