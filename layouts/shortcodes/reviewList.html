@@ -1,0 +1,15 @@
+<!-- https://gohugo.io/templates/shortcode/ -->
+<!-- https://gohugo.io/functions/transform/unmarshal/#remote-resource -->
+{{ $secret := os.Getenv "HUGO_BRIDGE_TOKEN" }}
+{{ $url := "https://api.bridgedataoutput.com/api/v2/OData/reviews/Reviewees?access_token={token}&$filter=RevieweeEmail%20eq%20'bmark123@gmail.com'&$expand=Reviews" }}
+{{ with (replace $url "{token}" $secret 1) | resources.GetRemote }}
+    {{ with . | transform.Unmarshal }}
+        {{ range .value }}
+            {{ range .Reviews }}
+                <blockquote><p>{{- .Description }}<br>—<cite>{{- partial "stars.html" .Rating }}, <a href="https://www.zillow.com/profile/bmark123">Zillow</a></cite></p></blockquote>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ else }}
+    {{ errorf "Unable to get agent reviews " }}
+{{ end }}

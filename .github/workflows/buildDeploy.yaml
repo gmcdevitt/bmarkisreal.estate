@@ -65,6 +65,8 @@ jobs:
 
       # Build your site and dump the files in ./public
       - name: Build
+        env:
+          HUGO_BRIDGE_TOKEN: ${{ secrets.HUGO_BRIDGE_TOKEN }}
         run: hugo --minify
 
       # Upload the files outputted files so the next job can get to them
@@ -77,7 +79,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # https://<username>.github.io/<repo>
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04 # runner
     needs: build # only do this if the build was successful
     steps:

@@ -1,0 +1,15 @@
+# config/_default/languages.en.toml
+
+title = "Brendan Markle"
+
+[params.author]
+name = "Brendan Markle"
+image = "images/bmark.jpg"
+headline = "Licensed Real Estate Agent 🏠, Mobile Notary 📝, Notary Signing Agent ✒️, 267-393-0300"
+bio = ""
+links = [
+    { tag = "https://www.opuselitere.com/agents/1450495/Brendan+Markle" },
+    { facebook = "https://www.facebook.com/bmarknotary" },
+    { instagram = "https://www.instagram.com/bmark123456/" },
+    { linkedin = "https://www.linkedin.com/in/brendan-markle-90ba0b45/" }
+]
